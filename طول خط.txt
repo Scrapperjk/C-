@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x, y;
+
+            Console.WriteLine("X=Shoro");
+            x = double.Parse(Console.ReadLine());
+            Console.WriteLine("Y=Payan");
+           
+
+            y = Convert.ToDouble(Console.ReadLine());
+            if (x > y)
+            {
+                Console.WriteLine("Payan nabayad kochaktar az Shoro bashad");
+
+            }
+            else
+            {
+                double res = Tool(x,y);
+                Console.WriteLine("tool khat ={0}", res);
+            }
+
+            Console.ReadKey();
+        }
+        private static double Tool(double x, double y)
+        {
+            double temp = 0;
+            temp = y - x;
+
+            return temp;
+        }
+    }
+}

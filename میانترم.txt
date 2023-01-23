@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            
+            double x = Convert.ToDouble(a);
+            double y = Convert.ToDouble(b);
+           
+
+            double res=calc(x,y);      
+
+            Console.WriteLine(res);
+
+            Console.ReadLine();
+        }
+
+        private static double calc(double x, double y)
+        {
+            double aa =( 1 / 35)*x;
+            double bb = ( 1/ 65)*y;
+            double cc = aa + bb;
+
+            return cc;
+
+
+
+        }
+    }
+}

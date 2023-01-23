@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classTest
+{
+ 
+    class Test
+    {
+        private string ID;
+          private string Name;
+          private string Data;
+          private double Money;
+          
+        public string ID{
+            get{return ID;}
+            set{ID=value;}
+        }
+         public string Name{
+            get{return Name;}
+            set{Name=value;}
+        }
+         public string Data{
+            get{return Data;}
+            set{IDataD=value;}
+        }
+         public double Money{
+            get{return Money;}
+            set{Money=value;}
+        }
+        public string void answer(string id,string name,string data,string money)
+        {
+            ID=id;
+            Name=name;
+            Data=data;
+            money=money;
+        }
+        public double Bime()
+        {
+            return(Money*7)
+        }
+        public double task()
+        {
+            if(Money>=6500000)
+                return(Money*10/00);
+            else
+                return(Money*0)
+        }
+        public double money()
+        {
+            return(money-(task()+Bime()))
+        }
+
+    }
+    
+}
+    class Test2
+    {
+        public static void main()
+        {
+  Test tst-new Test();
+            string id=Console.ReadLine();
+            string name=Console.ReadLine();
+            string Data=Console.ReadLine();
+
+            double money=Convert.ToDouble(Console.ReadLine());
+            tst.answer(id,name,Data,money);
+            Console.WriteLine(tst.Id""+tst.Name""+tst.Data);
+            Console.WriteLine(tst.bime());
+            Console.WriteLine(tst.task());
+            Console.WriteLine(tst.money());
+        }
+    }
+}

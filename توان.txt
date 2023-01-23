@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            double T=Convert.ToDouble(a);
+
+            double res = Tavan2(T);
+            double res1 = Tavan3(T);
+            Console.WriteLine(res);
+            Console.WriteLine(res1);
+            Console.ReadLine();
+        }
+
+       private static double Tavan2(double T)
+        {
+            double x = Math.Pow(T, 2);
+            return x;
+           
+            
+           
+        }
+       private static double Tavan3(double T)
+       {
+           double y = Math.Pow(T, 3);
+           return y;
+       }
+    }
+}

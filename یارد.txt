@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace program
+{
+
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double m, y;
+
+            Console.WriteLine("Metr");
+            m = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Yard = {0}", Yard(m));
+            Console.ReadKey();
+        }
+        private static double Yard(double m)
+        {
+            double t = 0;
+            t = m * 1.196;
+            return t;
+        }
+    }
+}

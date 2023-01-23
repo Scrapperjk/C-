@@ -1,0 +1,94 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classTest
+{
+ 
+    class Test
+    {
+        private double a;
+        private double b;
+        private double c;
+        private double d;
+
+
+        public double a{
+
+            get{return a;}
+            set{a=value;}
+        }
+        public double b{
+
+            get{return b;}
+            set{b=value;}
+        }
+        public double c{
+
+            get{return c;}
+            set{c=value;}
+        }
+        public double d{
+
+            get{return d;}
+            set{d=value;}
+        }
+
+        public static void calc(){}
+        public static void calc(double A,double B,double C,double D)
+        {
+            if (D>0&&B>0){
+                a=A;
+                b=B;
+                c=C;
+                d=D;
+            }
+            else
+                Console.WriteLine("Khata Vorodi");
+        }
+        public static double sum()
+        {
+            double res=(a/b)+(c/d);
+            return res;
+        }
+           public static double min()
+        {
+            double res=(a/b)-(c/d);
+            return res;
+        }
+           public static double zar()
+        {
+            double res=(a/b)*(c/d);
+            return res;
+        }
+
+    }
+    
+}
+    class Test2
+    {
+        public static void main()
+        {
+            double nam1=Convert.ToDouble(Console.ReadLine());
+                  double nam2=Convert.ToDouble(Console.ReadLine());
+                   double nam3=Convert.ToDouble(Console.ReadLine());
+                   double nam4=Convert.ToDouble(Console.ReadLine());
+
+            classTest tst=new classTest();
+            bool flag=tst.calc(num1,num2,num3,num4)
+                if(flag)
+                {
+                    double sum=tst.sum();
+                    Console.WriteLine(sum.ToString());
+                    double sum=tst.min();
+                    Console.WriteLine(min.ToString());.
+                    double sum=tst.zar();
+                    Console.WriteLine(sum.zar());
+                }
+            else
+                    Console.WriteLine("Vorodi Namotabar");
+        }
+    }
+}

@@ -1,0 +1,77 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classTest
+{
+    class Test
+    {
+        public static void main()
+        {
+            Teacher th = new techer();
+            th.Teacher("123","Hosein","Mehtari",2600,16);
+            Console.WriteLine(th.Pay);
+        }
+    }
+    class Teacher
+    {
+
+        private string Id;
+        private string Name;
+        private string Family;
+        private int Time;
+        private int Pay;
+
+        public string Id
+        {
+            get { return Id; }
+            set { Id = value; }
+        }
+        public string Name
+        {
+            get { return Name; }
+            set { Name = value; }
+        }
+        public string Family
+        {
+            get { return Family; }
+            set { Family= value; }
+        }
+        public int Time
+        {
+            get { return Time; }
+            set
+            {
+                if (value > 0)
+                    Time = value;
+                else
+                    Time = 0;
+            }
+        }
+        public int Pay
+        {
+            get { return Pay; }
+            set
+            {
+                if (value > 0)
+                    Pay = value;
+                else
+                    Pay = 0;
+            }
+        }
+        public Teacher(string id, string name, string family, string time, string pay)
+        {
+            Id = id;
+            Name = name;
+            Family = family;
+            Time = time;
+            Pay = pay;
+        }
+        public long Paym()
+        {
+            return Time * Pay;
+        }
+    }
+}

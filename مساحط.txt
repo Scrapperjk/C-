@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classTest
+{
+ 
+    class Masahat
+    {
+        private int A;
+        private int B;
+        private int C;
+
+        public   test(int a,int b, int c)
+    {
+        A=a;
+        B=b;
+        C=c;
+        }
+       
+public int A
+{
+get{return A;}
+set{A=value;}
+}
+public int B
+{
+get{return B;}
+set{B=value;}
+}
+public int C
+{
+get{return C;}
+set{C=value;}
+}
+public double calc2()
+{
+return (A+B)*c/2;
+}
+    
+}
+    class Test2
+    {
+        public static void main()
+        {
+
+            Masahat R=new Masahat();
+            R.A=Convert.ToInt32(Console.ReadLine());
+            R.B=Convert.ToInt32(Console.ReadLine());
+            R.C=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(R.calc2);
+
+        }
+    }
+}
